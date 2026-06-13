@@ -80,7 +80,7 @@ android {
     signingConfigs {
         // testkey_untrusted.jks is an intentionally public test key shipped with the
         // source repository — it is NOT used for release signing.
-        // Override via TERMUX_DEBUG_STORE_PASSWORD / TERMUX_DEBUG_KEY_PASSWORD env vars.
+        // Override via TERMUX_DEBUG_KEY_ALIAS, TERMUX_DEBUG_STORE_PASSWORD, or TERMUX_DEBUG_KEY_PASSWORD env vars.
         debug {
             storeFile file('testkey_untrusted.jks')
             keyAlias System.getenv("TERMUX_DEBUG_KEY_ALIAS") ?: 'alias'
