@@ -1,0 +1,7 @@
+exclude_paths:
+  - "**/*.apk"
+  - "**/*.jks"
+  - "gradle/**"
+  - "fastlane/**"
+  - "art/**"
+  - "site/**"
